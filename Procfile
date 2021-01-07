@@ -1,1 +1,1 @@
-web: gunicorn -w 2 -b 127.0.0.1:8080 app:app
+web: gunicorn -b :5000 --access-logfile - --error-logfile - build:app
